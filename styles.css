@@ -1,0 +1,72 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, hsl(207, 30%, 56%), #eef2f3); /* Soft colors */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    color: #b4a7a7; /* Darker text for readability */
+  }
+  
+  .clock-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .clock {
+    padding: 30px 40px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    max-width: 400px; /* Ensures the clock fits */
+    width: 100%;
+  }
+  
+  .time {
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    margin-bottom: 10px;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+  }
+  
+  .time span {
+    padding: 0 10px;
+  }
+  
+  .date {
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+    margin-top: 10px;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
+  }
+  
+  .date span {
+    display: inline-block;
+    margin: 3px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .time {
+      font-size: 3.5rem;
+    }
+  
+    .date {
+      font-size: 1rem;
+    }
+  }
+  
